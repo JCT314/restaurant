@@ -1,10 +1,27 @@
+import chefImg from "./chef.jpg";
+
 function init() {
-    console.log("calling init");
     const contentEl = document.querySelector("#content");
-    console.log(contentEl);
-    contentEl.append(createHeaderEl());
-    contentEl.append(createMainEl());
-    contentEl.append(createFooterEl());
+    const headerEl = createHeaderEl();
+    const mainEl = createMainEl();
+    const footerEl = createFooterEl();
+    contentEl.append(headerEl);
+    contentEl.append(mainEl);
+    contentEl.append(footerEl);
+    return {
+        headerEl,
+        mainEl,
+        footerEl
+    };
+}
+
+function showHomeContent(mainEl) {
+    mainEl.innerHTML = 
+    `<h2 class="sub-header">Best burgers in your city since 1993</h2>
+    <div class="img-container">
+        <img src="${chefImg}" alt="chef making burger" class="main-img">
+    </div>
+    <p class="cta">Order online or visit us!</p>`;
 }
 
 function createHeaderEl() {
@@ -26,7 +43,7 @@ function createMainEl() {
     main.innerHTML = 
     `<h2 class="sub-header">Best burgers in your city since 1993</h2>
     <div class="img-container">
-        <img src="./c6ced9ec6b8e6571fae5.jpg" alt="chef making burger" class="main-img">
+        <img src="${chefImg}" alt="chef making burger" class="main-img">
     </div>
     <p class="cta">Order online or visit us!</p>`;
     return main;
@@ -37,7 +54,7 @@ function createFooterEl() {
     footer.classList.add("footer");
     footer.innerHTML = 
     `<p class="copyright">Copyright &copy; 2022 jct314</p>`;
-    return footer;
+    return footer
 }
 
-export default init;
+export {init,showHomeContent};

@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #fff;
 }
 
 #content {
@@ -23,7 +24,6 @@ body {
 }
 
 .headline {
-  color: #fff;
   text-align: center;
   font-size: 3rem;
 }
@@ -38,26 +38,23 @@ body {
 .nav-item {
   margin: 40px 40px 0px;
   padding-bottom: 10px;
-  color: #fff;
   transition: box-shadow 0.3s;
+  cursor: pointer;
 }
 
-.nav-item:hover {
+.selected {
   box-shadow: 0px 4px 0px 0px #fff;
-  cursor: pointer;
-  /* border-bottom: 1px solid #fff; */
 }
 
 .main {
   background-color: #000000af;
   width: 50%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px;
   margin-bottom: 40px;
 }
 
 .sub-header {
-  color: #fff;
   text-align: center;
   padding: 40px;
 }
@@ -70,18 +67,57 @@ body {
 
 .main-img {
   width: 80%;
-  color: #fff;
   border-radius: 50%;
 }
 
 .cta {
-  color: #fff;
   text-align: center;
 }
 
 .footer {
   background-color: #000000af;
-  color: #fff;
   text-align: center;
   padding: 20px;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item-title {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.menu-item-text {
+  font-size: 0.5rem;
+  text-align: center;
+}
+
+.menu-img-container {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.menu-img {
+  background-size: cover;
+  border-radius: 10px;
 }
