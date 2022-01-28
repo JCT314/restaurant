@@ -1,4 +1,4 @@
-import chefImg from "./chef.jpg";
+import chefImg from "./img/general/chef.jpg";
 
 function init() {
     const contentEl = document.querySelector("#content");

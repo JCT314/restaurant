@@ -1,8 +1,8 @@
 import './style.css';
-import './hero.jpg';
-import './chef.jpg';
+import './img/general/hero.jpg';
 import {init,showHomeContent} from './home.js';
 import showMenuContent from './menu.js';
+import showContactContent from './contact.js';
 
 const {headerEl,mainEl,footerEl} = init();
 const tabs = [...headerEl.querySelectorAll('.nav-item')];
@@ -18,6 +18,9 @@ function onClick(e) {
         }
         if(tab.textContent === "Home") {
             showHomeContent(mainEl);
+        }
+        if(tab.textContent === "Contact") {
+            showContactContent(mainEl);
         }
     }
 }

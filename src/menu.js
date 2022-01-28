@@ -1,8 +1,8 @@
-import classicBurgerImg from "./classic_burger.jpg";
-import baconBurgerImg from "./bacon_burger.jpg";
-import chipotleBurgerImg from "./chipotle_burger.jpg";
-import eggsBenedictImg from "./eggs_benedict_burger.jpg";
-import stackedBurgerImg from "./stacked_burger.jpg";
+import classicBurgerImg from "./img/burgers/classic_burger.jpg";
+import baconBurgerImg from "./img/burgers/bacon_burger.jpg";
+import chipotleBurgerImg from "./img/burgers/chipotle_burger.jpg";
+import eggsBenedictImg from "./img/burgers/eggs_benedict_burger.jpg";
+import stackedBurgerImg from "./img/burgers/stacked_burger.jpg";
 
 function addMenuItem(title,imageSrc,desc) {
     return `
